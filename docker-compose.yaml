@@ -10,4 +10,4 @@ services:
         - "1194:1194/udp"
       restart: always
       volumes:
-        - ${VPN_VOLUMEN_PATH:./data}:/etc/openvpn
+        - ./volumen-data:/etc/openvpn
