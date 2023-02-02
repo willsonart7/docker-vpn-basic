@@ -11,4 +11,3 @@ services:
       restart: always
       volumes:
         - ${VPN_VOLUMEN_PATH:/opt/openvpn/data}:/etc/openvpn
-			
