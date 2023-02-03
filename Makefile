@@ -26,13 +26,13 @@ create-client-only:
 	@echo "Create client"
 	@echo "Enter the name of the client"
 	@read name; \
-	./scripts/create-client $$name
+	./scripts/generate-user.sh $$name
 
 generate-file-only:
 	@echo "Generate file"
 	@echo "Enter the name of the client"
 	@read name; \
-	./scripts/generate-file $$name
+	./scripts/generate-file.sh $$name
 
 generate-file: create-client-only generate-file-only
 	@echo "Generate file completed!!"
