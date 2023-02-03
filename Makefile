@@ -5,14 +5,14 @@
 
 build:
 	@echo "Build project"
-	@echo "Enter the volumen path for example: /home/user/vpn"
+	@echo "Enter the volumen path for example: /opt/openvpn"
 	@read volumen; \
 	echo "VPN_VOLUMEN_PATH=$$volumen" >> ./docker.env
 	@echo "Build completed!!"
 
 config: build
 	@echo "Config VPN"
-	@echo "Enter the name of the host for example: vpn.example.com"
+	@echo "Enter the name of the host for example: udp://vpn.example.com"
 	@read host; \
 	./scripts/init-config.sh $$host
 	@echo "Config Completed!"
