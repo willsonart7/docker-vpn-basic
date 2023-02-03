@@ -11,8 +11,20 @@ Configuration Openvpn with docker easy to install
 - make
 
 ## Installation
-- Clone this repository
-- Build dependencies and install configuration files
+
+Clone repository
+```sh
+	$ git clone https://github.com/willsonart7/docker-vpn-basic.git openvpn
+```
+
+Enter project
+
+```sh
+	$ cd openvpn
+```
+
+Build dependencies and install configuration files
+
 ```sh
 	$ make config 
 ```
