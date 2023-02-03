@@ -2,4 +2,4 @@
 
 CLIENTNAME=$1
 
-docker-compose run --rm openvpn ovpn_getclient $CLIENTNAME > /opt/openvpn/user_files/$CLIENTNAME.ovpn
+docker-compose run --rm openvpn ovpn_getclient $CLIENTNAME > ../user_files/$CLIENTNAME.ovpn
