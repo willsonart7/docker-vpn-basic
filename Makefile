@@ -17,6 +17,11 @@ config: build
 	./scripts/init-config.sh $$host
 	@echo "Config Completed!"
 
+run: config
+	@echo "Run VPN"
+	@docker-compose up -d
+	@echo "Run completed!!"
+
 create-client-only:
 	@echo "Create client"
 	@echo "Enter the name of the client"
@@ -31,3 +36,4 @@ generate-file-only:
 
 generate-file: create-client-only generate-file-only
 	@echo "Generate file completed!!"
+
